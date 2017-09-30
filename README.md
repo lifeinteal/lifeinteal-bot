@@ -2,3 +2,7 @@
 
 # lifeinteal-bot
 Slack app for Life in Teal.
+
+# CI
+
+https://travis-ci.org/lifeinteal/lifeinteal-bot
