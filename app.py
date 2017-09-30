@@ -1,5 +1,6 @@
 import os
 import logging
+import json
 from flask import Flask, request
 
 PORT = int(os.getenv("PORT", "5000"))
@@ -17,8 +18,11 @@ def home():
 
 @app.route('/', methods=['POST'])
 def challenge():
-    log.debug("Form: " + str(request.form))
-    return request.form.get("challenge") or "wat"
+    message = request.json()
+    log.debug("Message: " + json.dumps(message))
+    if message and message.get("body") and message["body"].get("challenge"):
+        return message["body"]["challenge"]
+    return "wat"
 
 
 if __name__ == '__main__':
