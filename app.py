@@ -20,8 +20,10 @@ def home():
 def challenge():
     message = request.json
     log.debug("Message: " + json.dumps(message))
-    if message and message.get("body") and message["body"].get("challenge"):
-        return message["body"]["challenge"]
+    if message and message.get("challenge"):
+        challenge = message.get("challenge")
+        log.debug("Challenge: " + str(challenge))
+        return challenge
     return "wat"
 
 
