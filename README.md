@@ -1,0 +1,2 @@
+# lifeinteal-bot
+Slack app
