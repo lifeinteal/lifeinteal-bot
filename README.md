@@ -1,2 +1,2 @@
 # lifeinteal-bot
-Slack app
+Slack app for Life in Teal.
