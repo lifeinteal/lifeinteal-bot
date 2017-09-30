@@ -3,6 +3,6 @@
 # lifeinteal-bot
 Slack app for Life in Teal.
 
-# CI
+## CI
 
 https://travis-ci.org/lifeinteal/lifeinteal-bot
