@@ -18,7 +18,7 @@ def home():
 
 @app.route('/', methods=['POST'])
 def challenge():
-    message = request.json()
+    message = request.json
     log.debug("Message: " + json.dumps(message))
     if message and message.get("body") and message["body"].get("challenge"):
         return message["body"]["challenge"]
