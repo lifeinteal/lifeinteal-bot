@@ -7,3 +7,11 @@ Slack app for Life in Teal.
 
 https://travis-ci.org/lifeinteal/lifeinteal-bot
 
+## Address
+
+https://lifeinteal-bot.herokuapp.com/
+
+## Heroku
+
+https://dashboard.heroku.com/apps/lifeinteal-bot
+
